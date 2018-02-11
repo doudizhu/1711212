@@ -1,0 +1,277 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"><title>选饭大转盘</title><style type="text/css">body,p{margin:0}a{text-decoration:none}html{font-size:75%}.hiding{display:none !important}.dkd-header-logo{background-position:0 0;background-size:100%;max-width:380px}.dkd-header-logo:after{padding-top:13.42105%}.home-page-icon{background-position:0 60.43956%;background-size:1085.71429%;max-width:35px}.home-page-icon:after{padding-top:94.28571%}.my-account-icon{background-position:0 100%;background-size:1310.34483%;max-width:29px}.my-account-icon:after{padding-top:110.34483%}.dkd-header-logo,.home-page-icon,.my-account-icon{background-image:url("/public/img/helper/component/spirite/header-spirite.png");display:inline-block;width:100%}.dkd-header-logo:after,.home-page-icon:after,.my-account-icon:after{content:'';display:block}.lottery-rotary{margin:10% auto;max-width:80%;position:relative;text-align:center;font-size:0}.lottery-rotary>canvas:first-child{max-width:100%;border-radius:50%;border:1.5rem solid #8182f8;box-sizing:border-box;position:relative;z-index:1}.lottery-rotary>canvas:first-child+a{position:absolute;left:50%;top:50%;-moz-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);display:inline-block;background-color:#fff;height:6rem;width:6rem;z-index:9;color:#fff;background-color:#ff4949;border-radius:50%;line-height:6rem}.lottery-rotary>canvas:first-child+a:before{content:'';position:absolute;top:0;height:0;font-size:0;line-height:0;border-style:solid;margin-top:-35px;border-width:0 10px 50px 10px;border-color:#ff4949 transparent;left:50%;transform:translateX(-50%)}.lottery-rotary>canvas:first-child+a>span{display:inline-block;vertical-align:middle;line-height:1;font-size:1.8rem}.lottery-rotary>canvas:first-child+a+ul{position:absolute;top:0;left:50%;height:100%;transform:translateX(-0.25rem);z-index:1}.lottery-rotary>canvas:first-child+a+ul>li{position:absolute;top:0;left:0;height:100%}.lottery-rotary>canvas:first-child+a+ul>li:before{content:"";display:inline-block;width:.5rem;height:.5rem;border-radius:50%;margin-top:.5rem;box-shadow:0 1px 2px rgba(0,0,0,0.6);-webkit-animation-timing-function:ease-in-out;-webkit-animation-duration:2000ms;-webkit-animation-iteration-count:infinite;-webkit-animation-direction:alternate}.lottery-rotary>canvas:first-child+a+ul>li:nth-child(odd):before{border:1px solid #2b92d4;background-image:-webkit-gradient(linear, left top, left bottom, from(#6cc3fe), to(#21a1d0))}.lottery-rotary>canvas:first-child+a+ul>li:nth-child(even):before{border:1px solid #fff;background-image:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc));-webkit-animation-delay:2000ms;opacity:.4;box-shadow:0 1px 2px 0 rgba(255,255,255,0.2)}.lottery-rotary>canvas:first-child+a+ul>li:nth-child(1){-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);-webkit-transform:rotate(0deg);transform:rotate(0deg)}.lottery-rotary>canvas:first-child+a+ul>li:nth-child(2){-moz-transform:rotate(15deg);-ms-transform:rotate(15deg);-webkit-transform:rotate(15deg);transform:rotate(15deg)}.lottery-rotary>canvas:first-child+a+ul>li:nth-child(3){-moz-transform:rotate(30deg);-ms-transform:rotate(30deg);-webkit-transform:rotate(30deg);transform:rotate(30deg)}.lottery-rotary>canvas:first-child+a+ul>li:nth-child(4){-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-webkit-transform:rotate(45deg);transform:rotate(45deg)}.lottery-rotary>canvas:first-child+a+ul>li:nth-child(5){-moz-transform:rotate(60deg);-ms-transform:rotate(60deg);-webkit-transform:rotate(60deg);transform:rotate(60deg)}.lottery-rotary>canvas:first-child+a+ul>li:nth-child(6){-moz-transform:rotate(75deg);-ms-transform:rotate(75deg);-webkit-transform:rotate(75deg);transform:rotate(75deg)}.lottery-rotary>canvas:first-child+a+ul>li:nth-child(7){-moz-transform:rotate(90deg);-ms-transform:rotate(90deg);-webkit-transform:rotate(90deg);transform:rotate(90deg)}.lottery-rotary>canvas:first-child+a+ul>li:nth-child(8){-moz-transform:rotate(105deg);-ms-transform:rotate(105deg);-webkit-transform:rotate(105deg);transform:rotate(105deg)}.lottery-rotary>canvas:first-child+a+ul>li:nth-child(9){-moz-transform:rotate(120deg);-ms-transform:rotate(120deg);-webkit-transform:rotate(120deg);transform:rotate(120deg)}.lottery-rotary>canvas:first-child+a+ul>li:nth-child(10){-moz-transform:rotate(135deg);-ms-transform:rotate(135deg);-webkit-transform:rotate(135deg);transform:rotate(135deg)}.lottery-rotary>canvas:first-child+a+ul>li:nth-child(11){-moz-transform:rotate(150deg);-ms-transform:rotate(150deg);-webkit-transform:rotate(150deg);transform:rotate(150deg)}.lottery-rotary>canvas:first-child+a+ul>li:nth-child(12){-moz-transform:rotate(165deg);-ms-transform:rotate(165deg);-webkit-transform:rotate(165deg);transform:rotate(165deg)}.lottery-rotary>canvas:first-child+a+ul>li:nth-child(13){-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-webkit-transform:rotate(180deg);transform:rotate(180deg)}.lottery-rotary>canvas:first-child+a+ul>li:nth-child(14){-moz-transform:rotate(195deg);-ms-transform:rotate(195deg);-webkit-transform:rotate(195deg);transform:rotate(195deg)}.lottery-rotary>canvas:first-child+a+ul>li:nth-child(15){-moz-transform:rotate(210deg);-ms-transform:rotate(210deg);-webkit-transform:rotate(210deg);transform:rotate(210deg)}.lottery-rotary>canvas:first-child+a+ul>li:nth-child(16){-moz-transform:rotate(225deg);-ms-transform:rotate(225deg);-webkit-transform:rotate(225deg);transform:rotate(225deg)}.lottery-rotary>canvas:first-child+a+ul>li:nth-child(17){-moz-transform:rotate(240deg);-ms-transform:rotate(240deg);-webkit-transform:rotate(240deg);transform:rotate(240deg)}.lottery-rotary>canvas:first-child+a+ul>li:nth-child(18){-moz-transform:rotate(255deg);-ms-transform:rotate(255deg);-webkit-transform:rotate(255deg);transform:rotate(255deg)}.lottery-rotary>canvas:first-child+a+ul>li:nth-child(19){-moz-transform:rotate(270deg);-ms-transform:rotate(270deg);-webkit-transform:rotate(270deg);transform:rotate(270deg)}.lottery-rotary>canvas:first-child+a+ul>li:nth-child(20){-moz-transform:rotate(285deg);-ms-transform:rotate(285deg);-webkit-transform:rotate(285deg);transform:rotate(285deg)}.lottery-rotary>canvas:first-child+a+ul>li:nth-child(21){-moz-transform:rotate(300deg);-ms-transform:rotate(300deg);-webkit-transform:rotate(300deg);transform:rotate(300deg)}.lottery-rotary>canvas:first-child+a+ul>li:nth-child(22){-moz-transform:rotate(315deg);-ms-transform:rotate(315deg);-webkit-transform:rotate(315deg);transform:rotate(315deg)}.lottery-rotary>canvas:first-child+a+ul>li:nth-child(23){-moz-transform:rotate(330deg);-ms-transform:rotate(330deg);-webkit-transform:rotate(330deg);transform:rotate(330deg)}.lottery-rotary>canvas:first-child+a+ul>li:nth-child(24){-moz-transform:rotate(345deg);-ms-transform:rotate(345deg);-webkit-transform:rotate(345deg);transform:rotate(345deg)}.lottery-rotary:after{content:"";display:inline-block;padding-top:100%;width:9rem;border-radius:50%;position:absolute;-moz-transform:rotate(-90deg) translateX(50%);-ms-transform:rotate(-90deg) translateX(50%);-webkit-transform:rotate(-90deg) translateX(50%);transform:rotate(-90deg) translateX(50%);-moz-transform-origin:0% 100%;-ms-transform-origin:0% 100%;-webkit-transform-origin:0% 100%;transform-origin:0% 100%;box-shadow:-9rem 0rem 0 -3rem #4e37a2}ul{list-style:none;padding:0;margin:0}ul li{margin:0}@-webkit-keyframes breathe{0%{opacity:.4;box-shadow:0 1px 2px 0 rgba(255,255,255,0.2)}100%{opacity:1;border:1px solid #3bebeb;box-shadow:0 1px 20px 4px #3bffff}}@-webkit-keyframes breatheWhite{0%{opacity:.4;box-shadow:0 1px 2px 0 rgba(255,255,255,0.2)}100%{opacity:1;border:1px solid #fffbf0;box-shadow:0 1px 20px 4px #fff}}
+</style></head><body><div class="lottery-rotary"><canvas width="1096px" height="1096px"></canvas><a><span>点击<br>选园</span></a></div><script>var view = {
+    // 一、main
+    init:function(){
+        var config = {
+            // 2.奖盘模块选择器
+            selector:'.lottery-rotary',
+            // 4.奖品名
+            name:[
+                "南园","家园",
+                "澜园","芝兰园",
+                "北园", "寓园",
+                "荷园", "桃李园",
+                "金融学院", "观畴园"
+            ],
+        };
+        // 1.抽奖转盘功能
+        view.initLotteryRotary(config);
+        // 2.自动化绘制奖盘
+        view.createTurnWheel(config);
+    },
+    // 二、logic
+    // 
+    
+    // 三、individual
+    // 1.抽奖转盘功能
+    initLotteryRotary:function(config){
+        var rotary = document.querySelector(config.selector),
+            btn = rotary.querySelector('a'),
+            img = btn.previousSibling,
+            // 旋转标志
+            rotateFlag = false,
+            number = config.name.length,
+            angleUnit = 360/number,
+            angleBuffer = 360*4;
+        
+        
+        view.bind(rotary,'click',function(){
+            //- 防止多次触发的
+            //- // 方式一：局域变量判断
+            //- if(!rotateFlag){
+            //-     rotateFlag = true;
+                
+            //-     var index = view.randomNum(0,number),
+            //-         angleEnd = index*angleUnit,
+            //-         angleRotate = -(angleEnd + angleBuffer);
+            //-     img.style.transition = 'transform 3s ease-out';
+            //-     img.style.transform = 'rotate('+angleRotate+'deg)';
+                
+            //-     // 回调
+            //-     // 方式一：
+            //-     //- setTimeout(function(){
+            //-     //-     img.style.transition = 'none';
+            //-     //-     img.style.transform = 'rotate(-'+angleEnd+'deg)';
+            //-     //-     rotateFlag = false;
+            //-     //-     // * 逆时针转问题
+            //-     //-     alert('今天吃"'+config.name[index]+'"');
+            //-     //- },4000)
+            //-     // 方式二：
+            //-     view.transitionend(img,function(){
+            //-         img.style.transition = 'none';
+            //-         img.style.transform = 'rotate(-'+angleEnd+'deg)';
+            //-         rotateFlag = false;
+            //-         // * 逆时针转问题
+            //-         alert('今天吃"'+config.name[index]+'"');
+            //-     })                          
+            //- }
+            // 防止多次触发的其他三种方式
+            // 方式二：禁用双击
+            var self = this,
+                callee = arguments.callee;
+            view.unbind(this,'click',callee);
+            
+            var index = view.randomNum(0,number),
+                angleEnd = index*angleUnit,
+                angleRotate = -(angleEnd + angleBuffer);
+            img.style.transition = 'transform 3s ease-out';
+            img.style.transform = 'rotate('+angleRotate+'deg)';
+            
+            // 回调
+            view.transitionend(img,function(){
+                img.style.transition = 'none';
+                img.style.transform = 'rotate(-'+angleEnd+'deg)';
+                
+                // * 逆时针转问题
+                alert('今天吃"'+config.name[index]+'"');
+                // 最后：恢复按钮点击事件
+                view.bind(self,'click',callee);
+            })                        
+            
+            //- // 方式三：判断图片当前的transition属性值
+            //- if(img.style.transition === 'none' || img.style.transition === ''){
+            //-     // 需要执行的代码
+            //- }
+            //- // ?方式三：(可行性待研究，貌似getEventListeners在客户端控制台才可执行)判断图片是否有绑定事件处于动画中
+            //- if(JSON.stringify(getEventListeners(img)) == '{}'){
+            //-     // 需要执行的代码
+            //- }
+        });
+        
+        
+    },
+    // 2.自动化绘制奖盘
+    createTurnWheel:function (config) {
+        var turnWheel = {
+            // 转盘奖品名称数组
+            rewardNames: config.name,
+            // 转盘外圆的半径
+            outsideRadius: 274,
+            // 转盘奖品位置距离圆心的距离
+            textRadius: 240,
+            // 转盘内圆的半径
+            insideRadius: 20,
+            // 开始角度
+            startAngle: (-0.5-(2/config.name.length)/2)*Math.PI,
+            // false:停止;ture:旋转
+            bRotate: false,
+        };
+        view.drawWheel(turnWheel,config);
+    },
+    // 2.1 执行canvas图片绘制
+    drawWheel:function (turnWheel,config) {
+        // 获取canvas画板
+        var canvas = document.querySelector(config.selector+'>canvas'),
+            // 计算每块占的角度，弧度制
+            baseAngle = Math.PI * 2 / (turnWheel.rewardNames.length),
+            // 获取上下文
+            ctx=canvas.getContext("2d");
+            // // 画板的高度
+            // canvasW = canvas.width,
+            // // 画板的宽度
+            // canvasH = canvas.height;
+        // 让图像清晰适应高分屏放大2倍再缩回
+        ctx.scale(2,2);
+        var canvasW = canvas.width/2,
+            canvasH = canvas.height/2;
+        // 基准字体
+        var fontStyle= {
+                big:'bold 26px Microsoft YaHei',
+                middle:'18px Microsoft YaHei',
+                small:'14px Microsoft YaHei'
+            },
+            offsetHorizontal = function(HorizontalDirection,text,ctx){
+                switch(HorizontalDirection){
+                    case 'right':
+                        return 0;
+                    case 'left':
+                        return -ctx.measureText(text).width;
+                    case 'center':
+                    default :
+                        return -ctx.measureText(text).width / 2;
+                }
+            },
+            creatCtxText = function(text,fontStyle,line_height,ctx,HorizontalDirection){
+                ctx.font = fontStyle;
+                ctx.fillText(text, offsetHorizontal(HorizontalDirection,text,ctx),line_height);
+            };
+        //在给定矩形内清空一个矩形
+        ctx.clearRect(0,0,canvasW,canvasH);
+        //strokeStyle 绘制颜色
+        ctx.strokeStyle = "#ca1518";
+        //font 画布上文本内容的当前字体属性
+        ctx.font = '16px Microsoft YaHei';
+        // 绘图
+        for(var index = 0 ; index < turnWheel.rewardNames.length ; index++){
+            // 当前的角度
+            var angle = turnWheel.startAngle + index * baseAngle;
+            // 填充颜色
+            ctx.fillStyle = turnWheel.colors ? turnWheel.colors[index]
+                : (
+                    (index%2 == 0) ? '#ffeebe': '#fef9ee'
+                );
+            // 开始画内容
+            // 1.基本的背景颜色
+            ctx.beginPath();
+            ctx.arc(canvasW * 0.5, canvasH * 0.5, turnWheel.outsideRadius, angle, angle + baseAngle, false);
+            ctx.arc(canvasW * 0.5, canvasH * 0.5, turnWheel.insideRadius, angle + baseAngle, angle, true);
+            // ctx.stroke(); // 边框
+            ctx.fill();
+            ctx.save();
+            // 绘制奖品内容
+            // 1.字体
+            // 颜色
+            ctx.fillStyle = "#ca1518";
+            // 整体位置
+            var rewardName = turnWheel.rewardNames[index],
+                line_height = 26,
+                translateX = canvasW * 0.5 + Math.cos(angle + baseAngle / 2) * turnWheel.textRadius,
+                translateY = canvasH * 0.5 + Math.sin(angle + baseAngle / 2) * turnWheel.textRadius;
+            ctx.translate(translateX,translateY);
+            ctx.rotate(angle + baseAngle / 2 + Math.PI / 2);
+            if(rewardName.indexOf("汇源天然苏打水") >= 0){
+                creatCtxText('汇源',fontStyle.big,line_height,ctx,'left');
+                creatCtxText('天然',fontStyle.middle,line_height,ctx,'right');
+                creatCtxText('苏打水',fontStyle.middle,2*line_height,ctx);
+            }else if(rewardName.indexOf("谢谢参与") >= 0){
+                creatCtxText('谢谢',fontStyle.big,line_height,ctx);
+                creatCtxText('参与',fontStyle.big,2*line_height,ctx);
+            }else{
+                creatCtxText(rewardName,fontStyle.big,line_height,ctx);
+                //- ctx.fillText(rewardName, -ctx.measureText(rewardName).width / 2, 0);
+            }
+            //还原画板的状态到上一个save()状态之前
+            ctx.restore();
+        }
+    },
+    
+    // 四、general
+    // 1.事件操作
+    /**
+     * @description 事件移除，兼容各浏览器
+     * @param target
+     * 事件触发对象
+     * @param type
+     * 事件
+     * @param func
+     * 事件处理函数
+     */
+    // 1.1 添加
+    bind:function(target, type, func) {
+        if (target.addEventListener) {// 非ie 和ie9
+            target.addEventListener(type, func, false);
+        } else if (target.attachEvent) { // ie6到ie8
+            target.attachEvent("on" + type, func);
+        } else {
+            target["on" + type] = func; // ie5
+        }
+    },
+    // 1.2 取消
+    unbind : function (target, type, func) {
+        if (target.removeEventListener) {
+            target.removeEventListener(type, func, false);
+        } else if (target.detachEvent) {
+            target.detachEvent("on" + type, func);
+        } else {
+            target["on" + type] = null;
+        }
+    },
+    // 返回在n和m之间的随机整数
+    /*
+    n<= random <=m
+    */
+    randomNum:function(n, m) {
+        /* Math.floor(Math.random()*10);时，可均衡获取0到9的随机整数。 */
+        var random = Math.floor(Math.random() * (m - n)) + n;
+        //- console.log("rewardNames["+random*36+"]");
+        return random;
+    },
+    // 监控动画transition结束
+    transitionend:function(element,callback){
+        /* From Modernizr */
+        function whichTransitionEvent(){
+            var t;
+            var el = document.createElement('fakeelement');
+            var transitions = {
+              'transition':'transitionend',
+              'OTransition':'oTransitionEnd',
+              'MozTransition':'transitionend',
+              'WebkitTransition':'webkitTransitionEnd'
+            }
+            for(t in transitions){
+                if( el.style[t] !== undefined ){
+                    return transitions[t];
+                }
+            }
+        }
+        /* Listen for a transition! */
+        var transitionEvent = whichTransitionEvent();
+        transitionEvent && element.addEventListener(
+            transitionEvent, function(){
+                callback();
+                element.removeEventListener(transitionEvent,arguments.callee,false)  
+            }
+        );
+    }
+}
+view.init();</script></body></html>
