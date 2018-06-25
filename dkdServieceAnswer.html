@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<title>问题编辑页</title>
+</head>
+<body>
+	<input id="problem" placeholder="问题">
+	<textarea id="answer" placeholder="答案"></textarea>
+	<button id="createLinkBtn">生成答案展示页链接</button>
+	<textarea id="dkeOverdueAnswerLink" placeholder="访问链接"></textarea>
+	<script>
+		var problem = document.getElementById('problem'),
+			answer = document.getElementById('answer'),
+			createLinkBtn = document.getElementById('createLinkBtn'),
+			dkeOverdueAnswerLink =  document.getElementById('dkeOverdueAnswerLink');
+
+		createLinkBtn.addEventListener('click', function(){
+			dkeOverdueAnswerLink.value = 'http://10.10.1.63:8190/180615serviceAnswer/dkdOverdueAnswer.html?'
+				+'problem='+escape(problem.value) +'&'
+				+'answer='+escape(answer.value);
+		});
+	</script>
+</body>
+</html>
