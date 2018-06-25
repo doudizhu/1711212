@@ -13,7 +13,8 @@
 
 	<script>
 		// decodeURIComponent方法，解码url中文
-        var search = decodeURIComponent(location.search),
+//         var search = decodeURIComponent(location.search),
+	var search = unescape(location.search),
         	/**
 	         * 获取url参数对象
 	         * @returns json
