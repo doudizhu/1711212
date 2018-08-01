@@ -16,12 +16,13 @@
           width: 100%;
           color:#3b99fc;
           //- border-color:#3b99fc;
-          margin:1.5rem 0 6rem;
+          margin:1.5rem 0;
           font-size:1.5rem;
           padding:0.5rem 0;
       }
       img{
           max-width:100%;
+          margin-top:5rem;
       }
     </style>
   </head>
@@ -159,8 +160,9 @@
         </label>
       </fieldset>
     </div>
-    <button>点击提交问卷</button><img src="https://raw.githubusercontent.com/doudizhu/1711212/master/692C1AD4-E969-435A-B6DF-78E4C7730EB4.png">
+    <button>点击提交问卷</button>
     <p id="result"></p>
+    <img src="https://raw.githubusercontent.com/doudizhu/1711212/master/692C1AD4-E969-435A-B6DF-78E4C7730EB4.png">
     <script>
       var button = document.querySelector('button');
       button.addEventListener('click', function(event){
@@ -196,7 +198,7 @@
               }
               result = `情感维度是:${emotionValue},逻辑维度是:${logicValue},直觉维度是:${intuitValue},感觉维度是:${feelValue}, \t\n综上你属于：\t\n"${quadrant}"。 \r\n如果想更深入了解自己的性格特色，快去请教凌霄美女吧！`;
               alert(result);
-              document.getElementById('result').innerHTML = result;
+              document.getElementById('result').innerHTML = '测试结果：<br/>'+result;
           }else{
               alert('问卷还没答完哦～')
           }
