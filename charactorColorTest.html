@@ -197,10 +197,24 @@
               ){
                   quadrant = '第四象限，橙色性格'
               }
-              result = `情感F维度是:${emotionValue},思维T维度是:${logicValue},直觉N维度是:${intuitValue},感觉S维度是:${feelValue}, \t\n综上你属于：\t\n"${quadrant}"。 \r\n如果想更深入了解自己的性格特色，快去请教凌霄美女吧！`;
+              result = `情感F维度是:${emotionValue},思维T维度是:${logicValue},直觉N维度是:${intuitValue},感觉S维度是:${feelValue}。 \t\n</br>综上你属于：\t\n"${quadrant}"。 \r\n</br>如果想更深入了解自己的性格特色，快去请教凌霄美女吧！`;
 
               document.getElementById('result').innerHTML = 'buling buling~ 快来看看测试结果：<br/>'+result+'<br/><img src="https://raw.githubusercontent.com/doudizhu/1711212/master/692C1AD4-E969-435A-B6DF-78E4C7730EB4.png">';
 //               alert(result);
+              // 滚动至评测结果位置
+              var offsetTop = self.offsetTop,
+                  documentHeight = document.documentElement.offsetHeight,
+                  viewportHeight = window.innerHeight,
+                  scrollBottom = documentHeight - viewportHeight,
+
+                  timer = setInterval(function () {
+                      var scrollTop = document.documentElement.scrollTop,
+                          speed = Math.floor((offsetTop - scrollTop) / 6);
+                      if (speed == 0 || scrollTop == scrollBottom) {
+                          clearInterval(timer);
+                      }
+                      document.documentElement.scrollTop = scrollTop + speed;
+                  }, 30);
           }else{
               alert('问卷还没答完哦～')
           }
