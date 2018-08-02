@@ -239,12 +239,14 @@
                         <br/>${resultStr}
                         <br/><img src="https://raw.githubusercontent.com/doudizhu/1711212/master/692C1AD4-E969-435A-B6DF-78E4C7730EB4.png">`;
                     // 滚动至评测结果位置
-                    scrollToTarget(result);
-                    document.querySelector('img').onload = function(){
-                        scrollToTarget(result,function(){
-                            document.getElementById('questionnaire').style = 'display:none;';
-                        });
-                    }
+                    scrollToTarget(result,function(){
+                        document.getElementById('questionnaire').style = 'display:none;';
+                    });
+                    // document.querySelector('img').onload = function(){
+                    //     scrollToTarget(result,function(){
+                    //         document.getElementById('questionnaire').style = 'display:none;';
+                    //     });
+                    // }
                     // alert(result);
                 }else{
                     alert('问卷还没答完哦～')
