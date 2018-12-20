@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+        <title>4D人才测试</title>
+        <style>
+            fieldset>label{
+                display:block;
+            }
+            fieldset>label:hover{
+                background-color:#3b99fc80;
+            }
+            button{
+                display: block;
+                width: 100%;
+                color:#3b99fc;
+                margin:1.5rem 0;
+                font-size:1.5rem;
+                padding:0.5rem 0;
+            }
+            img{
+                max-width:100%;
+            }
+            h2{
+                text-align:center;
+            }
+            
+            .buling{ 
+              display: inline-block;
+              font-size: 20px;
+              margin: 10px;
+              background: linear-gradient(left, #f71605, #e0f513); 
+                background: -webkit-linear-gradient(left, #f71605, #e0f513);
+                background: -o-linear-gradient(right, #f71605, #e0f513);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation:scratchy 0.253s linear forwards infinite;
+            /* 其它浏览器兼容性前缀 */
+              -webkit-animation:scratchy 0.253s linear forwards infinite;
+              -moz-animation: scratchy 0.253s linear forwards infinite;
+              -ms-animation: scratchy 0.253s linear forwards infinite;
+              -o-animation: scratchy 0.253s linear forwards infinite;
+            }  
+           @keyframes  scratchy {
+            0% {
+              background-position: 0 0;
+            }
+            25% {
+              background-position: 0 0;
+            }
+            26% {
+              background-position: 20px -20px;
+            }
+            50% {
+              background-position: 20px -20px;
+            }
+            51% {
+              background-position: 40px -40px;
+            }
+            75% {
+              background-position: 40px -40px;
+            }
+            76% {
+              background-position: 60px -60px;
+            }
+            99% {
+              background-position: 60px -60px;
+            }
+            100% {
+              background-position: 0 0;
+            }
+          }
+          /* 添加兼容性前缀 */
+          @-webkit-keyframes scratchy {
+              0% {
+              background-position: 0 0;
+            }
+            25% {
+              background-position: 0 0;
+            }
+            26% {
+              background-position: 20px -20px;
+            }
+            50% {
+              background-position: 20px -20px;
+            }
+            51% {
+              background-position: 40px -40px;
+            }
+            75% {
+              background-position: 40px -40px;
+            }
+            76% {
+              background-position: 60px -60px;
+            }
+            99% {
+              background-position: 60px -60px;
+            }
+            100% {
+              background-position: 0 0;
+            }
+          }
+          @-moz-keyframes scratchy {
+              0% {
+              background-position: 0 0;
+            }
+            25% {
+              background-position: 0 0;
+            }
+            26% {
+              background-position: 20px -20px;
+            }
+            50% {
+              background-position: 20px -20px;
+            }
+            51% {
+              background-position: 40px -40px;
+            }
+            75% {
+              background-position: 40px -40px;
+            }
+            76% {
+              background-position: 60px -60px;
+            }
+            99% {
+              background-position: 60px -60px;
+            }
+            100% {
+              background-position: 0 0;
+            }
+          }
+          @-ms-keyframes scratchy {
+             0% {
+              background-position: 0 0;
+            }
+            25% {
+              background-position: 0 0;
+            }
+            26% {
+              background-position: 20px -20px;
+            }
+            50% {
+              background-position: 20px -20px;
+            }
+            51% {
+              background-position: 40px -40px;
+            }
+            75% {
+              background-position: 40px -40px;
+            }
+            76% {
+              background-position: 60px -60px;
+            }
+            99% {
+              background-position: 60px -60px;
+            }
+            100% {
+              background-position: 0 0;
+            }
+          }
+          @-o-keyframes scratchy {
+             0% {
+              background-position: 0 0;
+            }
+            25% {
+              background-position: 0 0;
+            }
+            26% {
+              background-position: 20px -20px;
+            }
+            50% {
+              background-position: 20px -20px;
+            }
+            51% {
+              background-position: 40px -40px;
+            }
+            75% {
+              background-position: 40px -40px;
+            }
+            76% {
+              background-position: 60px -60px;
+            }
+            99% {
+              background-position: 60px -60px;
+            }
+            100% {
+              background-position: 0 0;
+            }
+          }
+          
+          .box-two{ 
+            font-size: 20px; 
+            color:#4cc134; 
+            margin: 10px;
+            animation: changeshadow 1s  ease-in  infinite ;
+            /* 其它浏览器兼容性前缀 */
+            -webkit-animation: changeshadow 1s linear infinite;
+            -moz-animation: changeshadow 1s linear infinite;
+            -ms-animation: changeshadow 1s linear infinite;
+            -o-animation: changeshadow 1s linear infinite;
+          }  
+          @keyframes changeshadow {  
+              0%{ text-shadow: 0 0 4px #4cc134}  
+              50%{ text-shadow: 0 0 40px #4cc134}  
+              100%{ text-shadow: 0 0 4px #4cc134}  
+          }
+          /* 添加兼容性前缀 */
+        @-webkit-keyframes changeshadow {
+          0%{ text-shadow: 0 0 4px #4cc134}  
+                50%{ text-shadow: 0 0 40px #4cc134}  
+                100%{ text-shadow: 0 0 4px #4cc134}  
+        }
+        @-moz-keyframes changeshadow {
+            0%{ text-shadow: 0 0 4px #4cc134}  
+                  50%{ text-shadow: 0 0 40px #4cc134}  
+                  100%{ text-shadow: 0 0 4px #4cc134}  
+        }
+        @-ms-keyframes changeshadow {
+            0%{ text-shadow: 0 0 4px #4cc134}  
+                  50%{ text-shadow: 0 0 40px #4cc134}  
+                  100%{ text-shadow: 0 0 4px #4cc134}  
+        }
+        @-o-keyframes changeshadow {
+            0%{ text-shadow: 0 0 4px #4cc134}  
+                  50%{ text-shadow: 0 0 40px #4cc134}  
+                  100%{ text-shadow: 0 0 4px #4cc134}  
+        }
+        </style>
+    </head>
+    <body>
+        <div id="questionnaire">
+            <h2>小星星你是专门学过心理学的，肯定知道性格是没有好坏优劣之分，随心随意随性选就好哈。</h2>
+            <h4>(共计14小题，每题有两个选项，请二选其一。)</h4>
+            <h3>Feeling&Thinking决策者</h3>
+            <div id="decisionMake">
+                <fieldset>
+                    <legend>1</legend>
+                    <label>
+                        <input type="radio" name="1">
+                        和谐很重要
+                    </label>
+                    <label>
+                        <input type="radio" name="1">
+                        和谐是达到目的的手段
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        2
+                    </legend>
+                    <label>
+                        <input type="radio" name="2">
+                        因为“感觉对”而采取行动
+                    </label>
+                    <label>
+                        <input type="radio" name="2">
+                        因为“合乎逻辑”而采取行动
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>3</legend>
+                    <label>
+                        <input type="radio" name="3">
+                        优先考虑人
+                    </label>
+                    <label>
+                        <input type="radio" name="3">
+                        优先考虑事
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>4</legend>
+                    <label>
+                        <input type="radio" name="4">
+                        喜欢和谐的关系
+                    </label>
+                    <label>
+                        <input type="radio" name="4">
+                        喜欢做对的事
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>5</legend>
+                    <label>
+                        <input type="radio" name="5">
+                        达成共识再决定
+                    </label>
+                    <label>
+                        <input type="radio" name="5">
+                        根据自己的想法来决定
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>6</legend>
+                    <label>
+                        <input type="radio" name="6">
+                        首先相信自己的感觉
+                    </label>
+                    <label>
+                        <input type="radio" name="6">
+                        首先相信自己的理智
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>7</legend>
+                    <label>
+                        <input type="radio" name="7">
+                        无法忍受冲突
+                    </label>
+                    <label>
+                        <input type="radio" name="7">
+                        有冲突也可以忍受
+                    </label>
+                </fieldset>
+            </div>
+            <h3>Intuition&Sensing获取信息</h3>
+            <div id="pickInfo">
+                <fieldset>
+                    <legend>1</legend>
+                    <label>
+                        <input type="radio" name="8">
+                        依靠内在觉知
+                    </label>
+                    <label>
+                        <input type="radio" name="8">
+                        依靠观察
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>2</legend>
+                    <label>
+                        <input type="radio" name="9">
+                        更多思考的是“可能是什么”
+                    </label>
+                    <label>
+                        <input type="radio" name="9">
+                        更多思考的是“是什么”
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>3</legend>
+                    <label>
+                        <input type="radio" name="10">
+                        倾向创造
+                    </label>
+                    <label>
+                        <input type="radio" name="10">
+                        倾向常识
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>4</legend>
+                    <label>
+                        <input type="radio" name="11">
+                        依靠灵感采取行动
+                    </label>
+                    <label>
+                        <input type="radio" name="11">
+                        依靠谨慎分析采取行动
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>5</legend>
+                    <label>
+                        <input type="radio" name="12">
+                        喜欢研究抽象概念
+                    </label>
+                    <label>
+                        <input type="radio" name="12">
+                        喜欢研究事实和数据
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>6</legend>
+                    <label>
+                        <input type="radio" name="13">
+                        偏重全局
+                    </label>
+                    <label>
+                        <input type="radio" name="13">
+                        偏重细节
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>7</legend>
+                    <label>
+                        <input type="radio" name="14">
+                        喜欢有价值的想法
+                    </label>
+                    <label>
+                        <input type="radio" name="14">
+                        喜欢既定的事实
+                    </label>
+                </fieldset>
+            </div>
+            <button>点击提交问卷</button>
+        </div>
+        <p id="result"></p>
+        <script>
+            var button = document.querySelector('button');
+            button.addEventListener('click', function(event){
+                var self = event.target,
+                    list = document.querySelectorAll('input[type=radio]:checked');
+                if(list.length == 14){
+                    var emotionValue = document.querySelectorAll('#decisionMake fieldset>label:nth-child(2) input[type=radio]:checked').length,
+                        logicValue = 7 - emotionValue,
+                        intuitValue = document.querySelectorAll('#pickInfo fieldset>label:nth-child(2) input[type=radio]:checked').length,
+                        feelValue = 7 - intuitValue,
+                        quadrant = '',
+                        result = document.getElementById('result'),
+                        resultStr = '';
+                    if(
+                        logicValue > emotionValue
+                        && intuitValue > feelValue
+                    ){
+                        quadrant = '<b style="color:#3399FF;">第一象限，蓝色性格</b>'
+                    }else if(
+                        logicValue < emotionValue
+                        && intuitValue > feelValue
+                    ){
+                        quadrant = '<b style="color:#33CC00">第二象限，绿色性格</b>'
+                    }else if(
+                        logicValue < emotionValue
+                        && intuitValue < feelValue
+                    ){
+                        quadrant = '<b style="color:#FFCC00;">第三象限，黄色性格</b>'
+                    }else if(
+                        logicValue > emotionValue
+                        && intuitValue < feelValue
+                    ){
+                        quadrant = '<b style="color:#FF6600;">第四象限，橙色性格</b>'
+                    }
+                    // 初始化测试结果
+                    resultStr = `情感(F)维度是:${emotionValue},思维(T)维度是:${logicValue},直觉(N)维度是:${intuitValue},感觉(S)维度是:${feelValue}。
+                        \t\n</br>综上你属于：\t\n"${quadrant}"。`;
+                        // \r\n</br>如果想更深入了解自己的性格特色，快去请教凌霄美女吧！`;
+                    result.innerHTML = `测试结果为：
+                        <br/>${resultStr}`;
+                    result.innerHTML = `<span class="buling">bulingbuling~</span><br/>可爱的<h3 class="box-two">小星星✨</h3>，你的测试结果为：
+                        <br/>${resultStr}
+                        <br/><img src="https://raw.githubusercontent.com/doudizhu/1711212/master/288C5181-87A6-4660-9A4F-3EC1D855F702.png">`;
+                    // 滚动至评测结果位置
+                    scrollToTarget(result,function(){
+                        document.getElementById('questionnaire').style = 'display:none;';
+                    });
+                    // document.querySelector('img').onload = function(){
+                    //     scrollToTarget(result,function(){
+                    //         document.getElementById('questionnaire').style = 'display:none;';
+                    //     });
+                    // }
+                    // alert(result);
+                }else{
+                    alert('问卷还没答完哦～')
+                }
+            });
+            function scrollToTarget(target,callback){
+                var offsetTop = target.offsetTop,
+                    documentHeight = document.documentElement.offsetHeight,
+                    viewportHeight = window.innerHeight,
+                    scrollBottom = documentHeight - viewportHeight,
+                    timer = setInterval(function () {
+                        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop,
+                            speed = Math.floor((offsetTop - scrollTop) / 6);
+                        // 修正scrollBottom值，由于图片加载完成后documentHeight高度变化引起，如果加载过快timer第二次执行时，scrollTop已经到底值不会再变化。speed无法收敛，将一直保持不变。
+                        // 方式一：
+                        // 实时获取documentHeight，如有变化，则修正scrollBottom
+                        var documentHeightNow = document.documentElement.offsetHeight;
+                        if(documentHeight != documentHeightNow){
+                            scrollBottom = documentHeightNow - viewportHeight;
+                        }
+                        // 方式二：
+                        // 实时算取scrollBottom
+                        // 方式三：
+                        // 比对scrollTop相对上次有无变化，如无变化，则已到底。直接结束循环
+                        // alert(`
+                        //     documentHeight:${documentHeight}\n
+                        //     documentHeightNow:${document.documentElement.offsetHeight}\n
+                        //     viewportHeight:${viewportHeight}\n
+                        //     offsetTop:${offsetTop}\n
+                        //     speed:${speed},\n
+                        //     scrollTop:${scrollTop},\n
+                        //     scrollBottom:${scrollBottom},\n
+                        // `)
+                        if (
+                            // 1.到了对应位置检测
+                            speed == 0 
+                            // 2.到底检测
+                            || scrollTop == scrollBottom
+                        ){
+                            clearInterval(timer);
+                            if(typeof callback == 'function'){
+                                callback();    
+                            }
+                        }
+                        document.documentElement.scrollTop = document.body.scrollTop = scrollTop + speed;
+                    }, 30);
+            }
+        </script>
+    </body>
+</html>
