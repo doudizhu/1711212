@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+        <title>MBTI测试</title>
+        <style>
+            fieldset>label{
+                display:block;
+            }
+            fieldset>label:hover{
+                background-color:#3b99fc80;
+            }
+            button{
+                display: block;
+                width: 100%;
+                color:#3b99fc;
+                margin:1.5rem 0;
+                font-size:1.5rem;
+                padding:0.5rem 0;
+            }
+            img{
+                max-width:100%;
+            }
+            h2{
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="questionnaire">
+            <h2>MBTI测试</h2>
+            <h4>针对每项陈述给自己评分</h4>
+            <div id="decisionMake">
+                <fieldset class='e'>
+                    <legend>让我更感兴趣的是人而不是观点或者感受</legend>
+                    <label>
+                        <input type="radio" name="1" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="1" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="1" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="1" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="1" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+                
+
+                <fieldset class='s'>
+                    <legend>我喜欢处理事实和细节</legend>
+                    <label>
+                        <input type="radio" name="2" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="2" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="2" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="2" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="2" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='t'>
+                    <legend>我喜欢对事物有清晰的逻辑</legend>
+                    <label>
+                        <input type="radio" name="3" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="3" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="3" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="3" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="3" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='j'>
+                    <legend>我喜欢按照日程做事</legend>
+                    <label>
+                        <input type="radio" name="4" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="4" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="4" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="4" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="4" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+                <fieldset class='i'>
+                    <legend>人们很难接近我</legend>
+                    <label>
+                        <input type="radio" name="5" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="5" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="5" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="5" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="5" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+                <fieldset class='n'>
+                    <legend>我倾向于透过现象看本质</legend>
+                    <label>
+                        <input type="radio" name="6" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="6" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="6" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="6" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="6" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='f'>
+                    <legend>随心而为胜过用智力做决定</legend>
+                    <label>
+                        <input type="radio" name="7" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="7" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="7" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="7" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="7" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='p'>
+                    <legend>我喜欢生活中频繁的改变</legend>
+                    <label>
+                        <input type="radio" name="8" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="8" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="8" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="8" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="8" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='e'>
+                    <legend>与别人相处能给我能量</legend>
+                    <label>
+                        <input type="radio" name="9" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="9" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="9" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="9" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="9" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+                
+
+                <fieldset class='s'>
+                    <legend>我是一个现实主义者</legend>
+                    <label>
+                        <input type="radio" name="10" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="10" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="10" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="10" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="10" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='t'>
+                    <legend>我觉得我是客观的</legend>
+                    <label>
+                        <input type="radio" name="11" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="11" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="11" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="11" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="11" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='j'>
+                    <legend>我喜欢仔细做计划</legend>
+                    <label>
+                        <input type="radio" name="12" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="12" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="12" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="12" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="12" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+                <fieldset class='i'>
+                    <legend>我是一个很深刻的人</legend>
+                    <label>
+                        <input type="radio" name="13" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="13" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="13" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="13" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="13" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+                <fieldset class='n'>
+                    <legend>有人说我不切实际</legend>
+                    <label>
+                        <input type="radio" name="14" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="14" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="14" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="14" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="14" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='f'>
+                    <legend>我对“谁”而不是“为什么”更感兴趣</legend>
+                    <label>
+                        <input type="radio" name="15" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="15" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="15" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="15" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="15" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='p'>
+                    <legend>我充满好奇</legend>
+                    <label>
+                        <input type="radio" name="16" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="16" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="16" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="16" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="16" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+
+
+                <fieldset class='e'>
+                    <legend>我喜欢和别人互动</legend>
+                    <label>
+                        <input type="radio" name="17" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="17" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="17" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="17" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="17" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+                
+
+                <fieldset class='s'>
+                    <legend>我喜欢活在当下</legend>
+                    <label>
+                        <input type="radio" name="18" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="18" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="18" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="18" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="18" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='t'>
+                    <legend>我一直根据原则做决定</legend>
+                    <label>
+                        <input type="radio" name="19" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="19" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="19" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="19" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="19" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='j'>
+                    <legend>我很果断</legend>
+                    <label>
+                        <input type="radio" name="20" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="20" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="20" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="20" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="20" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+                <fieldset class='i'>
+                    <legend>我喜欢反思生活</legend>
+                    <label>
+                        <input type="radio" name="21" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="21" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="21" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="21" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="21" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+                <fieldset class='n'>
+                    <legend>我很理想化</legend>
+                    <label>
+                        <input type="radio" name="22" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="22" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="22" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="22" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="22" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='f'>
+                    <legend>劝说永远比强迫好</legend>
+                    <label>
+                        <input type="radio" name="23" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="23" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="23" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="23" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="23" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='p'>
+                    <legend>我喜欢惊喜</legend>
+                    <label>
+                        <input type="radio" name="24" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="24" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="24" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="24" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="24" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='e'>
+                    <legend>我有很多朋友和熟人</legend>
+                    <label>
+                        <input type="radio" name="25" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="25" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="25" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="25" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="25" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+                
+
+                <fieldset class='s'>
+                    <legend>我是一个务实的人</legend>
+                    <label>
+                        <input type="radio" name="26" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="26" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="26" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="26" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="26" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='t'>
+                    <legend>有时候人们需要强硬</legend>
+                    <label>
+                        <input type="radio" name="27" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="27" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="27" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="27" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="27" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='j'>
+                    <legend>我总是很准时</legend>
+                    <label>
+                        <input type="radio" name="28" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="28" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="28" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="28" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="28" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+                <fieldset class='i'>
+                    <legend>我有几个好朋友就够了</legend>
+                    <label>
+                        <input type="radio" name="29" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="29" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="29" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="29" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="29" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+                <fieldset class='n'>
+                    <legend>我倾向于展望未来</legend>
+                    <label>
+                        <input type="radio" name="30" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="30" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="30" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="30" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="30" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='f'>
+                    <legend>我为保持人与人之间的和谐关系而努力</legend>
+                    <label>
+                        <input type="radio" name="31" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="31" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="31" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="31" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="31" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='p'>
+                    <legend>我喜欢新奇和多样性</legend>
+                    <label>
+                        <input type="radio" name="32" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="32" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="32" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="32" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="32" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+
+
+                <fieldset class='e'>
+                    <legend>我是一个社交型的人</legend>
+                    <label>
+                        <input type="radio" name="33" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="33" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="33" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="33" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="33" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+                
+
+                <fieldset class='s'>
+                    <legend>我倾向于具体的、一板一眼的方式</legend>
+                    <label>
+                        <input type="radio" name="34" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="34" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="34" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="34" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="34" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='t'>
+                    <legend>我喜欢分析为什么会发生这些事情</legend>
+                    <label>
+                        <input type="radio" name="35" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="35" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="35" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="35" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="35" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='j'>
+                    <legend>坚持到底对我来说很重要</legend>
+                    <label>
+                        <input type="radio" name="36" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="36" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="36" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="36" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="36" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+                <fieldset class='i'>
+                    <legend>与人相处让我筋疲力尽</legend>
+                    <label>
+                        <input type="radio" name="37" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="37" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="37" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="37" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="37" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+                <fieldset class='n'>
+                    <legend>激发对我而言很重要</legend>
+                    <label>
+                        <input type="radio" name="38" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="38" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="38" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="38" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="38" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='f'>
+                    <legend>我总是很同情别人</legend>
+                    <label>
+                        <input type="radio" name="39" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="39" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="39" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="39" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="39" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='p'>
+                    <legend>我的生活态度比较悠闲</legend>
+                    <label>
+                        <input type="radio" name="40" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="40" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="40" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="40" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="40" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='e'>
+                    <legend>有人会说我有点肤浅</legend>
+                    <label>
+                        <input type="radio" name="41" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="41" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="41" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="41" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="41" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+                
+
+                <fieldset class='s'>
+                    <legend>我脚踏实地</legend>
+                    <label>
+                        <input type="radio" name="42" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="42" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="42" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="42" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="42" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='t'>
+                    <legend>正义比怜悯更重要</legend>
+                    <label>
+                        <input type="radio" name="43" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="43" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="43" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="43" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="43" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='j'>
+                    <legend>我很整洁</legend>
+                    <label>
+                        <input type="radio" name="44" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="44" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="44" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="44" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="44" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+                <fieldset class='i'>
+                    <legend>我喜欢独处</legend>
+                    <label>
+                        <input type="radio" name="45" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="45" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="45" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="45" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="45" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+                <fieldset class='n'>
+                    <legend>我经常跟着直觉走</legend>
+                    <label>
+                        <input type="radio" name="46" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="46" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="46" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="46" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="46" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='f'>
+                    <legend>我更喜欢感受而不是逻辑</legend>
+                    <label>
+                        <input type="radio" name="47" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="47" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="47" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="47" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="47" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='p'>
+                    <legend>我非常灵活</legend>
+                    <label>
+                        <input type="radio" name="48" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="48" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="48" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="48" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="48" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+
+
+                <fieldset class='e'>
+                    <legend>别人很容易接近我</legend>
+                    <label>
+                        <input type="radio" name="49" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="49" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="49" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="49" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="49" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+                
+
+                <fieldset class='s'>
+                    <legend>我倾向于以貌取人</legend>
+                    <label>
+                        <input type="radio" name="50" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="50" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="50" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="50" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="50" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='t'>
+                    <legend>我认为人们不动脑筋</legend>
+                    <label>
+                        <input type="radio" name="51" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="51" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="51" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="51" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="51" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='j'>
+                    <legend>我喜欢控制</legend>
+                    <label>
+                        <input type="radio" name="52" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="52" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="52" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="52" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="52" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+                <fieldset class='i'>
+                    <legend>我更喜欢想法和感受</legend>
+                    <label>
+                        <input type="radio" name="53" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="53" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="53" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="53" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="53" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+                <fieldset class='n'>
+                    <legend>我喜欢大画面</legend>
+                    <label>
+                        <input type="radio" name="54" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="54" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="54" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="54" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="54" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='f'>
+                    <legend>同情心是我最高的理想</legend>
+                    <label>
+                        <input type="radio" name="55" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="55" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="55" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="55" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="55" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+
+
+                <fieldset class='p'>
+                    <legend>我是个积极主动的人</legend>
+                    <label>
+                        <input type="radio" name="56" value="1">
+                        1 – 根本不像我
+                    </label>
+                    <label>
+                        <input type="radio" name="56" value="2">
+                        2 – 不太像我
+                    </label>
+                    <label>
+                        <input type="radio" name="56" value="3">
+                        3 – 一半是对的
+                    </label>
+                    <label>
+                        <input type="radio" name="56" value="4">
+                        4 – 有点像我
+                    </label>
+                    <label>
+                        <input type="radio" name="56" value="5">
+                        5 – 很像我
+                    </label>
+                </fieldset>
+            </div>
+            <button>点击提交问卷</button>
+        </div>
+        <p id="result"></p>
+        <script>
+            
+            
+            var button = document.querySelector('button');
+            var len = document.querySelectorAll('fieldset').length;
+            button.addEventListener('click', function(event){
+                var self = event.target,
+                    list = document.querySelectorAll('input[type=radio]:checked');
+                if(list.length == len){
+                    let result = document.getElementById('result')
+                    let resultStr = ''
+
+                    let e = getItemValue('e')
+                    let i = getItemValue('i')
+                    let s = getItemValue('s')
+                    let n = getItemValue('n')
+                    let t = getItemValue('t')
+                    let f = getItemValue('f')
+                    let j = getItemValue('j')
+                    let p = getItemValue('p')
+                    
+                    resultStr = `
+                        <table border="1" cellspacing="">
+                            <tr>
+                                <th>E<th>
+                                <th>I<th>
+                                <th>S<th>
+                                <th>N<th>
+                                <th>T<th>
+                                <th>F<th>
+                                <th>J<th>
+                                <th>P<th>
+                            <tr>
+                            <tr>
+                                <td>${e}<td>
+                                <td>${i}<td>
+                                <td>${s}<td>
+                                <td>${n}<td>
+                                <td>${t}<td>
+                                <td>${f}<td>
+                                <td>${j}<td>
+                                <td>${p}<td>
+                            <tr>
+                        <table>
+                    `
+                    // 初始化测试结果
+                    result.innerHTML = `测试结果为：
+                        ${resultStr}
+
+                    `
+                    document.getElementById('questionnaire').style = 'display:none;';
+
+
+                    
+                }else{
+                    alert('问卷还没答完哦～')
+                }
+            });
+            function getItemValue(e){
+                var eDom = document.querySelectorAll(`.${e} input[type=radio]:checked`),
+                eArr = Array.prototype.map.call(eDom,i=>+(i.value)),
+                eVal = eArr.reduce((total,num)=>total+num);
+                return eVal;
+            }
+        </script>
+    </body>
+</html>
