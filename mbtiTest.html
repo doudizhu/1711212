@@ -1454,6 +1454,30 @@
                     let j = getItemValue('j')
                     let p = getItemValue('p')
                     
+                    // resultStr = `
+                    //     <table border="1" cellspacing="">
+                    //         <tr>
+                    //             <th>E<th>
+                    //             <th>I<th>
+                    //             <th>S<th>
+                    //             <th>N<th>
+                    //             <th>T<th>
+                    //             <th>F<th>
+                    //             <th>J<th>
+                    //             <th>P<th>
+                    //         <tr>
+                    //         <tr>
+                    //             <td>${e}<td>
+                    //             <td>${i}<td>
+                    //             <td>${s}<td>
+                    //             <td>${n}<td>
+                    //             <td>${t}<td>
+                    //             <td>${f}<td>
+                    //             <td>${j}<td>
+                    //             <td>${p}<td>
+                    //         <tr>
+                    //     <table>
+                    // `
                     resultStr = `
                         <table border="1" cellspacing="">
                             <tr>
@@ -1467,20 +1491,31 @@
                                 <th>P<th>
                             <tr>
                             <tr>
-                                <td>${e}<td>
-                                <td>${i}<td>
-                                <td>${s}<td>
-                                <td>${n}<td>
-                                <td>${t}<td>
-                                <td>${f}<td>
-                                <td>${j}<td>
-                                <td>${p}<td>
+                                <td style=${e>i?'color:red;':''}>${e}<td>
+                                <td style=${e<i?'color:red;':''}>${i}<td>
+                                <td style=${s>n?'color:red;':''}>${s}<td>
+                                <td style=${s<n?'color:red;':''}>${n}<td>
+                                <td style=${t>f?'color:red;':''}>${t}<td>
+                                <td style=${t<f?'color:red;':''}>${f}<td>
+                                <td style=${j>p?'color:red;':''}>${j}<td>
+                                <td style=${j<p?'color:red;':''}>${p}<td>
                             <tr>
                         <table>
                     `
+
+                    
+
+                    // resultStr = `
+                    //     <ol>
+                    //         <li></li>
+                    //     </ol>
+                    // ·
+
                     // 初始化测试结果
                     result.innerHTML = `测试结果为：
                         ${resultStr}
+                        <br>具体选项：
+                        ${getItemSelectedStr(list)}
 
                     `
                     document.getElementById('questionnaire').style = 'display:none;';
@@ -1496,6 +1531,11 @@
                 eArr = Array.prototype.map.call(eDom,i=>+(i.value)),
                 eVal = eArr.reduce((total,num)=>total+num);
                 return eVal;
+            }
+            function getItemSelectedStr(list){
+                var eArr = Array.prototype.map.call(list,i=>`<li>${i.getAttribute('name')}题，选择 ${i.value}号选项`),
+                eVal = eArr.reduce((total,num)=>total+num);
+                return `<ul>${eVal}</ul>`;
             }
         </script>
     </body>
