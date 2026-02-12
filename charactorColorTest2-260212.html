@@ -28,13 +28,7 @@
         </style>
     </head>
     <body>
-        <div id="inviteCode">
-            <h2>4D人才测试</h2>
-            <input type="text" placeholder="请输入邀请码" display="block" style="width:100%;padding:0.5rem 0;margin:1rem 0;font-size:1.5rem;text-align: center;">
-            <button id="submitBtnInviteCode">点击提交邀请码</button>
-            <p>注意：邀请码仅当天有效</p>
-        </div>
-        <div id="questionnaire" style="visibility: hidden;">
+        <div id="questionnaire">
             <h2>4D人才测试</h2>
             <h4>(共计14小题，每题有两个选项，请二选其一。)</h4>
             <h3>Feeling&Thinking决策者</h3>
@@ -199,39 +193,12 @@
                     </label>
                 </fieldset>
             </div>
-            <button id="submitBtnQuestionnaire">点击提交问卷</button>
+            <button>点击提交问卷</button>
         </div>
         <p id="result"></p>
         <script>
-            // 获取格式化后的4位日月
-            function getFormattedDate() {
-                const date = new Date();
-                const month = String(date.getMonth() + 1).padStart(2, '0'); // 月份是从0开始的，所以需要+1
-                const day = String(date.getDate()).padStart(2, '0');
-                return month + day; // 例如 "0212"
-            }
-            // 生成邀请码的方法
-            function generateInviteCode(){
-                const numStr = getFormattedDate()
-                const str = 'abcdefghij'
-                return str[+numStr[0]]+str[+numStr[1]]+str[+numStr[2]]+str[+numStr[3]]
-            }
-            // var button = document.querySelector('button');
-            var submitBtnQuestionnaire = document.querySelector('#submitBtnQuestionnaire');
-            var submitBtnInviteCode = document.querySelector('#submitBtnInviteCode');
-            submitBtnInviteCode.addEventListener('click', function(event){
-                var self = event.target,
-                    inviteCode = document.querySelector('#inviteCode input').value,
-                    todayInviteCode = generateInviteCode();
-                
-                if(inviteCode == todayInviteCode){
-                    document.getElementById('inviteCode').style = 'display:none;';
-                    document.getElementById('questionnaire').style = 'visibility:visible;';
-                }else{
-                    alert('邀请码错误，请重新输入～');
-                }
-            });
-            submitBtnQuestionnaire.addEventListener('click', function(event){
+            var button = document.querySelector('button');
+            button.addEventListener('click', function(event){
                 var self = event.target,
                     list = document.querySelectorAll('input[type=radio]:checked');
                 if(list.length == 14){
